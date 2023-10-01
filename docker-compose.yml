@@ -19,7 +19,7 @@ services:
   dth:
     image: unlimiteddba/paytmdth:latest
     ports:
-      - "82:80"
+      - "83:80"
     volumes:
       - "datasciencevol"
     deploy:
@@ -27,7 +27,7 @@ services:
   recharge:
     image: unlimiteddba/paytmrecharge:latest
     ports:
-      - "83:80"
+      - "84:80"
     volumes:
       - "azurevol"
     deploy:
