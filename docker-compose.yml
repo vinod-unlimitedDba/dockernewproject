@@ -2,33 +2,33 @@ version: '3.8'
 services:
   movies:
      image: unlimiteddba/paytmmovies:latest
-      ports:
+     ports:
         - "81:80"
-      volumes:
+     volumes:
         - "movies01"
-      deploy:
-         replicas: 3
+     deploy:
+        replicas: 3
    train:
      image: unlimiteddba/paytmtrain:latest
-      ports:
+     ports:
         - "82:80"
-      volumes:
+     volumes:
         - "train01"
-      deploy:
-         replicas: 3
+     deploy:
+        replicas: 3
    dth:
      image: unlimiteddba/paytmdth:latest
-      ports:
+     ports:
         - "83:80"
-      volumes:
+     volumes:
         - "dth01"
-      deploy:
+     deploy:
          replicas: 3
    recharge:
      image: unlimiteddba/paytrecharge:latest
-      ports:
+     ports:
         - "84:80"
-      volumes:
+     volumes:
         - "recharge01"
-      deploy:
+     deploy:
          replicas: 3
