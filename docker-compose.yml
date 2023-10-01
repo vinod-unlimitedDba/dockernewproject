@@ -8,7 +8,6 @@ services:
         - "/movies01"
       deploy:
          replicas: 3
-
    train:
     - image : unlimiteddba/paytmtrain
       ports:
@@ -17,8 +16,6 @@ services:
         - "/train01"
       deploy:
          replicas: 3
-
-
     dth:
     - image : unlimiteddba/paytmdth
       ports:
@@ -27,8 +24,6 @@ services:
         - "/dth01"
       deploy:
          replicas: 3
-
-
       recharge:
     - image : unlimiteddba/paytrecharge
       ports:
