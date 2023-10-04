@@ -4,8 +4,6 @@ services:
     image: unlimiteddba/paytmmovies:latest
     ports:
       - "81:80"
-    volumes:
-      - "devopsvol"
     deploy:
       replicas: 3
   train:
